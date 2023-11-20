@@ -1,0 +1,70 @@
+Name: undefined
+Email: undefined
+Text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.
+
+Name: undefined
+Email: undefined
+Text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.
+Name: undefined
+Email: undefined
+Text: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.
+
+Name: Mohammad Zidane Rahadian
+Email: mohammadzidane058@gmail.com
+Text: <form action="/submit" method="post">
+    <label for="Name">Nama</label><br>
+    <input type="text" name="Name" id="Name" required><br> <!-- Tambahkan name="Name" -->
+    <label for="Email">Email</label><br>
+    <input type="email" name="Email" id="Email" required><br> <!-- Tambahkan name="Email" -->
+    <label for="Massage">Pesan</label><br>
+    <textarea name="Text" id="Text" cols="30" rows="10" required></textarea>
+    <input type="submit" value="Kirim">
+</form>
+
+
+
+Name: Mohammad Zidane Rahadian
+Email: mohammadzidane058@gmail.com
+Text: <form action="/submit" method="post">
+    <label for="Name">Nama</label><br>
+    <input type="text" name="Name" id="Name" required><br> <!-- Tambahkan name="Name" -->
+    <label for="Email">Email</label><br>
+    <input type="email" name="Email" id="Email" required><br> <!-- Tambahkan name="Email" -->
+    <label for="Massage">Pesan</label><br>
+    <textarea name="Text" id="Text" cols="30" rows="10" required></textarea>
+    <input type="submit" value="Kirim">
+</form>
+
+
+
+Name: Mohammad Zidane Rahadian
+Email: mohammadzidane058@gmail.com
+Text: Amazing cool portfolio webiste's
+
+
+Name: Mohammad Zidane Rahadian
+Email: mohammadzidane058@gmail.com
+Text: Amazing cool portfolio webiste's
+
+
+Name: Mohammad Zidane Rahadian
+Email: mohammadzidane058@gmail.com
+Text: COOL
+
+Name: undefined
+Email: undefined
+Text: 
+Mantap
+
+Name: Mohammad Zidane Rahadian 
+Email: mohammdzidane058@gmail.com
+Text: COOL
+
+Name: a
+Email: a@a
+Text: ASq
+
+Name: Lia
+Email: Afilialiaa@gmail.com
+Text: Zidan keren aku suka
+

@@ -1,0 +1,354 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidenav {
+    display: none;
+}
+
+body {
+    background-color: white;
+    margin: 0 0 500px 0;
+    padding: 0;
+}
+
+#contact {
+    margin-right: 200px;
+}
+
+#Contact {
+    margin-bottom: 100px;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    margin-top: -25px;
+    backdrop-filter: blur(5px);
+    background-color: #33333300;
+    color: #fff;
+    padding: 1em;
+}
+
+.main .jumbotron .mainHeader {
+    z-index: -1;
+    margin: 90px 60px 0 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.main .jumbotron .mainHeader .text {
+    color: black;
+    font-size: 20px;
+}
+
+.main .jumbotron .mainHeader img {
+    width: 500px;
+    height: 500px;
+    transition: border-radius .4s;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.main .banner {
+    cursor: pointer;
+}
+
+.banner2 .teks {
+    transition: color 1s;
+    color: black;
+}
+
+.text a {
+    font-weight: bold;
+    border-radius: 100px;
+    background-color: rgb(0, 167, 218);
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    transition: background-color .4s;
+}
+
+.text a:hover {
+    background-color: rgb(0, 117, 153);
+}
+
+.text a:active {
+    background-color: rgb(0, 50, 153);
+}
+
+.theme-toogle {
+    float: right;
+    margin: -50px 20px 0 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+div.ZDev a img {
+    float: left;
+    margin-top: -5px;
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    margin-top: 20px;
+    /* position: relative; */
+    /* position: absolute; */
+    justify-content: center;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li .a {
+    padding: 5px;
+    margin: 0 70px 0 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color .4s;
+}
+
+nav ul li .a:hover {
+    color: rgb(11, 204, 204);
+}
+
+nav ul li p {
+    margin: 2px 30px 30px 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.banner2 {
+    z-index: -1;
+    margin: 100px 0 200px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner2 .connect {
+    margin-top: 48px;
+}
+
+.banner2 .teks {
+    margin: 0 58px 0 58px;
+}
+
+.banner2 .about .teks h3 {
+    color: rgb(0, 187, 187);
+    transition: .4s;
+}
+
+.project {
+    margin: 150px 0 150px 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    transition: .4s;
+}
+
+.project .text {
+    color: black;
+}
+
+.project .h1 {
+    color: rgb(15, 15, 15);
+    font-size: 50px;
+    font-weight: bold;
+    margin: -50px 0 0 0;
+    position: relative;
+    position: absolute;
+    text-align: center;
+}
+
+.project img {
+    border-radius: 10px 10px 0 0;
+    transition: .4s;
+}
+
+.project1, .project2, .project3 {
+    margin: 100px 0 0 0;
+    padding: 0 0 10px 0;
+    border-radius: 30px;
+    background-color: #ccc;
+    transition: .4s ease;
+}
+
+.project1 img, .project2 img, .project3 img {
+    border-radius: 30px;
+    width: 335px;
+    height: 180px;
+}
+
+.project .text h1 {
+    font-size: 25px;
+}
+
+.project .text p {
+    font-size: 14px;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project1:hover {
+    border:1px solid black;
+    border-radius: 0;
+    box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
+    /* transform: scale(1.05); */
+    transform: translateY(-20px);
+}
+
+
+.project2:hover {
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
+    /* transform: scale(1.05); */
+    transform: translateY(-20px);
+}
+
+.project3:hover {
+    border: 1px solid black;
+    border-radius: 0;
+    box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
+    /* transform: scale(1.05); */
+    transform: translateY(-20px);
+}
+
+.project img:hover {
+    border-radius: 0;
+}
+
+.client {
+    padding: 70px 0 100px 0;
+    background: linear-gradient(90deg, #ccc, #fff, #fff, #ccc);
+    transition: .4s;
+}
+
+.client h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.client p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.client .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.client .logo img {
+    cursor: pointer;
+    filter: saturate(0);
+    margin: 40px auto;
+    width: 200px;
+    height: 200px;
+    transition: .4s;
+}
+
+.client .logo img:hover {
+    filter: saturate(1);
+}
+
+.contact {
+    left: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 150px;
+} 
+
+.contact .text, .project .text {
+    text-align: center;
+}
+
+.form label {
+    color: rgb(0, 219, 219);
+    font-weight: bolder;
+    transition: .4s;
+}
+
+.form input {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: none;
+    /* margin: 0 auto; */
+    min-width: 97.3%;
+    transition: .4s;
+}
+
+
+
+.form input, .form textarea {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.form input, .form textarea {
+    border: 1px solid aqua;
+}
+
+.form input[type="submit"] {
+    margin-top: 20px;
+    width: 1006px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(0, 219, 219);
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(0, 201, 201);
+}
+
+textarea {
+    padding: 15px;
+    background-color: cyan;
+    background-color: #ccc;
+    border: none;
+    height: 100px;
+    max-height: 300px;
+    max-width: 1000px;
+    width: 97.4%;
+    padding-bottom: 100px;
+}
+
+.open-button {
+    opacity: 0;
+    text-shadow: 0 0 8px 5px rgb(0, 212, 142);
+    transition: .4s;
+}
+
+.close-button {
+    color: black;
+    position: sticky;
+    transition: .4s;
+}
+
+
+/* .toogleBtn p {
+    color: black;
+}
+
+.toogleBtn {
+    position: relative;
+    position: absolute;
+    display: flex;
+    float: right;
+} */
+
+/* Toogle darkmode */
+/* Add your existing styles here */
+
+/* Dark mode styles */

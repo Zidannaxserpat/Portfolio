@@ -1,0 +1,155 @@
+.dark-mode {
+    background: linear-gradient(225deg, rgb(3, 20, 26), rgb(1, 17, 7), rgb(1, 14, 6), rgb(0, 0, 0));
+    color: #fff;
+}
+
+.dark-mode nav ul li .a {
+    color: #ffffff;
+    transition: color .4s;
+}
+
+.dark-mode nav ul li .a:hover {
+    color: rgb(11, 204, 204);
+}
+
+.dark-mode .toogleBtn .theme-toogle {
+    background-color: white;
+}
+
+.dark-mode .teks {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .text {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .ZDev {
+    color: rgb(0, 100, 0);
+}
+
+.dark-mode .slideRadio .PLight {
+    position: relative;
+    position: absolute;
+    opacity: 1;
+    text-shadow: 0 0 3px white;
+    color: white;
+    transition: transform .4s;
+    transition: color .4s;
+}
+
+.dark-mode .slideRadio .PDark {
+    opacity: 0;
+    color: #33333300;
+}
+
+.dark-mode .main .jumbotron .mainHeader .text {
+    color: white;
+}
+
+.dark-mode .main .jumbotron .mainHeader .text a {
+    background-color: rgb(0, 214, 150);
+}
+
+.dark-mode .main .jumbotron .mainHeader .text a:hover {
+    background-color: rgb(2, 119, 84);
+}
+
+.dark-mode .main .jumbotron .mainHeader .text a:active {
+    background-color: rgb(2, 103, 61);
+}
+
+.dark-mode .slider {
+    box-shadow: 0 0 10px 3px white;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+.dark-mode .slider::before {
+    background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .banner2 .about .teks h3 {
+    color: rgb(0, 255, 179);
+}
+
+.dark-mode .main .jumbotron .mainHeader img {
+    border-radius: 10px;
+    transition: border-radius .4s;
+}
+
+.dark-mode .media img {
+    filter: brightness(5);
+}
+
+.dark-mode .banner2 .connect .teks .media img:hover {
+    background-color: rgb(2, 150, 105);
+}
+
+.dark-mode .project {
+    background-color: #00000000;
+    /* background: linear-gradient(90deg, rgb(3, 20, 26), rgb(1, 17, 7), rgb(1, 14, 6), rgb(0, 0, 0)); */
+}
+
+.dark-mode #scrollToTopBtn img {
+    filter: brightness(1);
+    background-color: white;
+}
+
+.dark-mode #scrollToTopBtn img:hover {
+    box-shadow: 0 0 10px 2px cyan;
+}
+
+.dark-mode .project1, .dark-mode .project2, .dark-mode .project3 {
+    background-color: rgb(0, 94, 66);
+}
+
+.dark-mode .project1:hover, .dark-mode .project2:hover, .dark-mode .project3:hover {
+    background-color: rgb(0, 94, 66);
+    box-shadow: 8px 8px 10px 0px cyan;
+}
+
+.dark-mode .project .h1 {
+    color: #f5f5f5;
+}
+
+.dark-mode .client {
+    background: linear-gradient(225deg, rgb(0, 0, 0), rgb(0, 18, 12),rgb(0, 18, 12),rgb(0, 0, 0));
+}
+
+.dark-mode .client:hover {
+    backdrop-filter: blur(100px);
+}
+
+.dark-mode .form label {
+    color: rgb(0, 218, 145);
+}
+
+.dark-mode .form input, .dark-mode .form textarea {
+    border: 2px solid rgb(0, 218, 145);
+    background-color: #fff;
+}
+
+.dark-mode .form input[type="submit"] {
+    background-color: rgb(0, 218, 145);
+}
+
+.dark-mode .form input[type="submit"]:hover {
+    background-color: rgb(0, 190, 127);
+}
+
+body.dark-mode-scrolled nav ul li .a {
+    color: black;
+}
+
+.dark-mode .open-button {
+    color: white;
+}
+
+.dark-mode .close-button {
+    color: white;
+}
+
+.dark-mode span.ZDev {
+    color: rgb(0, 255, 98);
+}

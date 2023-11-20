@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" id="Porch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="scrollToTopBtn.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="icon" href="ZLogo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Mohammad Zidane Rahadian</title>
+</head>
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- HTML -->
+<div class="loading-container" id="loadingContainer">
+    <div class="loading"></div>
+</div>
+
+<div class="main-content">
+    <span class="open-button" onclick="openNav()">&#9776; <!--Open --></span>
+    <!-- <h1>Your Main Content Goes Here</h1> -->
+</div>
+<nav class="sidenav">
+    <div class="close-button" onclick="closeNav()">&times;</div>
+    <ul>
+        <li><a class="a" href="#Porch">Porch</a></li>
+        <li><a class="a" id="about" href="#About">About Me</a></li>
+        <li><a class="a" href="#Portfolio">Portfolio</a></li>
+        <li><a class="a" href="#Support">Support</a></li>
+        <li><a class="a" href="#Contact">Contact</a></li>
+    </ul>
+    <div class="slideRadio">
+        <label class="switch" title="Toogle themes">
+            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <script src="script.js"></script>
+</nav>
+
+<header>
+    <div class="ZDev">
+        <a href="#Porch"><img src="ZDev.png" alt="" srcset=""></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a class="a" href="#Porch">Porch</a></li>
+            <li><a class="a" href="#About">About Me</a></li>
+            <li><a class="a" href="#Portfolio">Portfolio</a></li>
+            <li><a class="a" href="#Support">Support</a></li>
+            <li><a class="a" href="#Contact">Contact</a></li>
+            <div class="slideRadio">
+                <label class="switch" title="Toogle themes">
+                    <p class="PLight">Light <</p>
+                    <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                    <span class="slider"></span>
+                    <p class="PDark">> Dark</p>
+                </label>
+            </div>
+        </ul>
+    </nav>
+    <!-- <div class="toogleBtn">
+        <div class="theme-toogle" style="cursor: pointer;" id="theme-toggle" onclick="toggleTheme()"></div>
+        <input type="checkbox" name="radio" id="theme-toggle" ondblclick="toggleTheme()"><p></p></input>
+        <input type="radio" name="radio" id="theme-toggle" onclick="toggleTheme()"><p></p></input>
+    </div> -->
+</header>
+<body>
+    <div class="main">
+        <div class="jumbotron">
+            <div class="mainHeader">
+                <div class="text">
+                    <h1>Anya Forger</h1>
+                    <h3>
+                       From SxF anime 
+                    </h3>
+                    <p>Create by: Zidane</p>
+                    <a href="https://mohammadzidane058@gmail.com">Hubungi</a>
+                </div>
+                <div class="image" id="anya">
+                    <img title="Anya Forger" src="Anya.jpeg" alt="" srcset="">
+                </div>
+            </div>  
+        </div>
+    </div>
+
+
+
+
+    <div class="banner2">
+        <div id="About" class="about">
+            <div class="teks">
+                <h3 style="font-weight: bold;">TENTANG SAYA</h3>
+                <h1 style="font-weight: bold;">Saya masih pemula bukan orang pro</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed totam sint exercitationem itaque vero ea ipsam!</p>
+            </div>
+        </div>
+        <div id="connect" class="connect">
+            <div class="teks">
+                <h2 style="font-weight: bold;">Mari terhubung</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde asperiores minus, aut voluptatibus repellat ullam nulla dolorem.</p>
+                <div class="media">
+                    <a title="Instagram" class="instagram" href="https://instagram.com/zzzeeee05/"><img src="Instagram.png" alt=""></a>
+                    <a title="GitHub" class="github" href="https://github.com/zidannaxserpat/"><img src="GitHub.png" alt=""></a>
+                    <a title="Whatsapp" class="whatsapp" href="wa.me/+6285156346349/"><img src="Whatsapp.png" alt=""></a>
+                    <a title="Tiktok" class="tiktok" href="https://tiktok.com/@zidannaxserpat01"><img src="Tiktok.png" alt=""></a>
+                    <a title="facebook" class="Facebook" href="https://facebook.com/profile.php?id=100094310486371"><img src="Facebook.png" alt=""></a>
+                </div>
+            </div>
+            <div class="logo"></div>
+        </div>
+    </div>
+    <hr id="Portfolio">
+    <div class="project">
+    <h1 class="h1">Project Terbaru</h1>
+        <div class="project1">
+            <a href="https://zidannaxserpat.github.io/MicrosoftClone/"><img src="MSProject.png" alt="">
+                <div class="text">
+                    <h1>Microsoft Web Clone</h1>
+                    <p>Cloning official microsoft web without JS<br> and 80% success clone.</p>
+                </div>
+            </a>
+        </div>
+        <div class="project2">
+            <a href="https://zidannaxserpat.github.io/Registration-Page/"><img src="LoginPage.png" alt="">
+                <div class="text">
+                    <h1>Simple Registration Page</h1>
+                    <p>Making registration page using HTML and CSS.</p>
+                </div>
+            </a>
+        </div>
+        <div class="project3">
+            <a href="https://zidannaxserpat.github.io/MohammadZidaneRahfadian.github.io/"><img src="AppleWeb.png" alt="">
+                <div class="text">
+                    <h1>Apple Web Clone</h1>
+                    <p>Cloning Official apple web without JS<br>(almost 100% success).</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="client" id="Support">
+        <h1>Supported By</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident et ab numquam? Labore, est!</p>
+        <div class="logo">
+            <img src="letrisLogo.png" alt="">
+            <img src="ChatGPT_logo.svg.png" alt="">
+            <img src="letkesLogo.png" alt="">
+        </div>
+    </div>
+
+    
+    
+    <div class="contact">
+        <hr id="Contact">
+        <div class="text">
+            <h1>Hubungi</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.</p>
+        </div>
+        <div class="form">
+            <form action="/submit" method="post">
+                <label for="Name">Nama</label><br>
+                <input type="text" name="Name" id="Name" required><br> <!-- Tambahkan name="Name" -->
+                <label for="Email">Email</label><br>
+                <input type="email" name="Email" id="Email" required><br> <!-- Tambahkan name="Email" -->
+                <label for="Massage">Pesan</label><br>
+                <textarea name="Text" id="Text" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Kirim" onclick="simulateTimeConsumingAction()">
+            </form>            
+        </div>
+    </div>
+
+
+
+    <div id="scrollToTopContainer">
+        <a onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><img src="Arrow.png" alt=""></a>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Just a developer</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: mohammadzidane058@gmail.com</p>
+                <p>Phone: +6285156346349</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com/profile.php?id=100094310486371/" >Facebook</a>
+                <a href="https://github.com/zidannaxserpat/" >GitHub</a>
+                <a href="https://instagram.com/zzzeeee05/" >Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 <span class="ZDev">ZDev.</span> All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
