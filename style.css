@@ -1,5 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
+    transition: .4s;
 }
 
 .sidenav {
@@ -48,10 +49,13 @@ header {
 .main .jumbotron .mainHeader img {
     width: 500px;
     height: 500px;
-    transition: border-radius .4s;
     border: 2px solid black;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 10px;
+}
+
+.main .jumbotron .mainHeader .image h3 {
+    color: black;
 }
 
 .main .banner {
