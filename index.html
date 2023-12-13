@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" id="Porch">
 <head>
@@ -11,6 +12,8 @@
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="slider-img.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.1/signalr.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="icon" href="ZLogo.png" type="image/x-icon">
@@ -122,13 +125,20 @@
                     <a href="https://mohammadzidane058@gmail.com">Hubungi</a>
                 </div>
                 <div class="image" id="anya">
-                    <img title="Anya Forger" src="Anya.jpeg" alt="" srcset="">
+                    <img class="img" title="Anya Forger" src="Anya.jpeg" alt="" srcset="">
+                    <h3>Ubah Border:</h3>
+                    <div class="slideRadio-img">
+                        <label class="switch-img" title="Toogle border">
+                            <input type="checkbox" id="" onclick="">
+                            <span class="slider-img"></span>
+                        </label>
+                    </div>
                 </div>
             </div>  
         </div>
     </div>
 
-
+    
 
 
     <div class="banner2">
@@ -146,7 +156,7 @@
                 <div class="media">
                     <a title="Instagram" class="instagram" href="https://instagram.com/zzzeeee05/"><img src="Instagram.png" alt=""></a>
                     <a title="GitHub" class="github" href="https://github.com/zidannaxserpat/"><img src="GitHub.png" alt=""></a>
-                    <a title="Whatsapp" class="whatsapp" href="https://wa.me/+6285156346349/"><img src="Whatsapp.png" alt=""></a>
+                    <a title="Whatsapp" class="whatsapp" href="wa.me/+6285156346349/"><img src="Whatsapp.png" alt=""></a>
                     <a title="Tiktok" class="tiktok" href="https://tiktok.com/@zidannaxserpat01"><img src="Tiktok.png" alt=""></a>
                     <a title="facebook" class="Facebook" href="https://facebook.com/profile.php?id=100094310486371"><img src="Facebook.png" alt=""></a>
                 </div>
@@ -201,7 +211,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.</p>
         </div>
         <div class="form">
-            <form action="/submit" method="post">
+            <form action="/submit" method="get">
                 <label for="Name">Nama</label><br>
                 <input type="text" name="Name" id="Name" required><br> <!-- Tambahkan name="Name" -->
                 <label for="Email">Email</label><br>
