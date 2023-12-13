@@ -104,6 +104,16 @@ function toggleTheme() {
 //     animateScroll();
 // }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var slider = document.querySelector('.slider-img');
+    var img = document.querySelector('.img');
+
+    slider.addEventListener('click', function() {
+        this.classList.toggle('clicked');
+        img.style.borderRadius = this.classList.contains('clicked') ? '50%' : '10px';
+    });
+});
+
 // Show Loading
 function showLoading() {
     document.getElementById("loadingContainer").style.display = "flex";
