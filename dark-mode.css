@@ -1,5 +1,6 @@
 .dark-mode {
-    background: linear-gradient(225deg, rgb(3, 20, 26), rgb(1, 17, 7), rgb(1, 14, 6), rgb(0, 0, 0));
+    background-color: rgb(13, 23, 28);
+    /* background: linear-gradient(225deg, rgb(3, 20, 26), rgb(1, 17, 7), rgb(1, 14, 6), rgb(0, 0, 0)); */
     color: #fff;
 }
 
@@ -59,6 +60,10 @@
     background-color: rgb(2, 103, 61);
 }
 
+.dark-mode .main .jumbotron .mainHeader .image h3 {
+    color: #fff;
+}
+
 .dark-mode .slider {
     box-shadow: 0 0 10px 3px white;
     border: 2px solid rgb(0, 0, 0);
@@ -71,11 +76,6 @@
 
 .dark-mode .banner2 .about .teks h3 {
     color: rgb(0, 255, 179);
-}
-
-.dark-mode .main .jumbotron .mainHeader img {
-    border-radius: 10px;
-    transition: border-radius .4s;
 }
 
 .dark-mode .media img {
@@ -114,7 +114,7 @@
 }
 
 .dark-mode .client {
-    background: linear-gradient(225deg, rgb(0, 0, 0), rgb(0, 18, 12),rgb(0, 18, 12),rgb(0, 0, 0));
+    background: linear-gradient(225deg, rgb(13, 23, 28), rgb(26, 46, 56), rgb(13, 23, 28),rgb(26, 46, 56));
 }
 
 .dark-mode .client:hover {
