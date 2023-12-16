@@ -31,11 +31,15 @@
 
 function openNav() {
     document.querySelector(".sidenav").style.width = "250px";
+    document.querySelector(".sidenav").style.border = "2px solid #00ff00";
+    document.querySelector(".sidenav").style.height = "250px";
     document.querySelector(".main-content").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.querySelector(".sidenav").style.width = "0";
+    document.querySelector(".sidenav").style.border = "0";
+    document.querySelector(".sidenav").style.height = "0";
     document.querySelector(".main-content").style.marginLeft = "0";
 }
 
@@ -130,7 +134,7 @@ function simulateTimeConsumingAction() {
     setTimeout(() => {
         // Simulating a delay of 3 seconds
         hideLoading();
-    }, 3000);
+    }, 2000);
 }
 
 // Contoh penggunaan:
