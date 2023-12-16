@@ -97,6 +97,34 @@
     /* background: linear-gradient(90deg, rgb(3, 20, 26), rgb(1, 17, 7), rgb(1, 14, 6), rgb(0, 0, 0)); */
 }
 
+.dark-mode .showcase {
+    width: 650px;
+    height: 100px;
+    position: relative;
+    position: absolute;
+    margin-top: -100px;
+}
+
+.dark-mode .showcase video {
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.dark-mode .title {
+    padding-top: 10px;
+    background-color: rgb(13, 23, 28);
+    font-size: 50px;
+    color: #fff;
+    mix-blend-mode: darken;
+    /* position: relative; */
+    position: absolute;
+    text-align: center;
+}
+
 .dark-mode #scrollToTopBtn img {
     filter: brightness(1);
     background-color: white;
