@@ -31,7 +31,7 @@
         font-size: 15px;
     }
 
-    .banner2 {
+    .project2 {
         font-size: 15px;
         display: flex;
     }
@@ -189,13 +189,6 @@
     header {
         display: none;
     }
-
-    .ZDev {
-        position: relative;
-        position: absolute;
-        margin: 100px 100px 100px;
-    }
-    
     .sidenav {
         display: flex;
         margin: 0;
