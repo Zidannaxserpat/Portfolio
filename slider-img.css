@@ -1,5 +1,8 @@
 * {
-    transition: .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
 }
 
 .switch-img {
@@ -19,7 +22,7 @@
 }
 
 .slider-img {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(13, 23, 28);
     display: inline-block;
     cursor: pointer;
     /* position: relative; */
@@ -30,13 +33,12 @@
     right: 0;
     bottom: 0;
     border-radius: 100px;
-    box-shadow: 0 0 10px 3px rgb(0, 37, 31);
 }
 
 .slider-img::before {
     border-radius: 50%;
     position: absolute;
-    background-color: #000000;
+    background-color: rgb(13, 23, 28);
     content: "";
     height: 12px;
     width: 12px;
