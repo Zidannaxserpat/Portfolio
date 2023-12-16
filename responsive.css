@@ -25,6 +25,12 @@
         height: 350px;
     }
 
+    .bn632-hover {
+        width: 145px;
+        height: 50px;
+        font-size: 15px;
+    }
+
     .banner2 {
         font-size: 15px;
         display: flex;
@@ -111,6 +117,15 @@
         height: 200px;
     }
 
+    .main .jumbotron .mainHeader .image h3 {
+        font-size: 18px;
+    }
+
+    .bn632-hover {
+        width: 135px;
+        height: 45px;
+    }
+
     .project {
         display: flow-root;
         /* justify-content: space-between; */
@@ -147,6 +162,16 @@
 }
 
 @media only screen and (max-width: 700px) {    
+    .main .jumbotron .mainHeader .image h3 {
+        font-size: 15px;
+    }
+
+    .bn632-hover {
+        width: 130px;
+        height: 40px;
+        font-size: 13px;
+    }
+    
     .banner2 .about .teks h1 {
         font-size: 25px;
     }
@@ -164,13 +189,19 @@
     header {
         display: none;
     }
+
+    .ZDev {
+        position: relative;
+        position: absolute;
+        margin: 100px 100px 100px;
+    }
     
     .sidenav {
         display: flex;
         margin: 0;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(200px);
         z-index: 10;
-        height: 100%;
+        height: 35%;
         width: 0;
         position: fixed;
         top: 0;
@@ -190,7 +221,7 @@
     }
     
     .sidenav li {
-        padding: 30px 10px 20px 20px;
+        padding: 5px 10px 5px 20px;
     }
     
     .sidenav ul li a {
@@ -231,7 +262,7 @@
 
     .slideRadio {
         z-index: 100;
-        margin: 450px 200px 0 -78px;
+        margin: 200px 200px 0 -78px;
     }
 
     .main .jumbotron .mainHeader {
@@ -247,7 +278,25 @@
         width: 200px;
         height: 200px;
     }
+
+    .main .jumbotron .mainHeader .image h3 {
+        font-size: 10px;
+    }
+
+    .main .jumbotron .mainHeader .image .elements {
+        text-align: center;
+    }
     
+    .main .jumbotron .mainHeader .image .elements .slideRadio-img {
+        margin-left: 39%;
+    }
+
+    .bn632-hover {
+        width: 80px;
+        height: 30px;
+        font-size: 9px;
+    }
+
     .banner2 {
         font-size: 17px;
         text-align: center;
@@ -305,18 +354,18 @@
         width: 100px;
         height: 100px;
     }
+    
+    .form textarea {
+        width: 91%;
+    }
+    
+    .form input {
+        min-width: 91%;
+    }
 
     .footer-container {
         text-align: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    .form textarea {
-        width: 91%;
-    }
-
-    .form input {
-        min-width: 91%;
     }
 }
