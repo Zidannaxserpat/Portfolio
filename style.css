@@ -12,7 +12,7 @@
 
 body {
     background-color: white;
-    margin: 0 0 500px 0;
+    margin: 0 10px;
     padding: 0;
 }
 
@@ -33,6 +33,18 @@ header {
     background-color: #33333300;
     color: #fff;
     padding: 1em;
+}
+
+.slideRadio .PLight {
+    display: none;
+}
+
+.slideRadio .PDark {
+    display: block;
+}
+
+.slideRadio .PLight span, .slideRadio .PDark span {
+    cursor: pointer;
 }
 
 .main .jumbotron .mainHeader {
@@ -169,10 +181,9 @@ nav ul li p {
 
 .project {
     margin: 150px 0 150px 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    justify-content: space-around;
-    transition: .4s;
+    /* transition: .4s; */
 }
 
 .showcase {
@@ -181,55 +192,21 @@ nav ul li p {
     position: relative;
 }
 
-.showcase video {
-    width: 662px;
-    height: 115px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
 .title {
-    width: 662px;
-    background-color: #fff;
-    font-size: 100px;
-    color: #000;
-    mix-blend-mode: lighten;
-}
-
-.project .text {
-    color: black;
-}
-
-.showcase {
-    width: 650px;
-    height: 100px;
-    position: relative;
-    position: absolute;
     margin-top: -100px;
-}
-
-.showcase video {
-    width: 600px;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.title {
-    padding-top: 10px;
     background-color: #fff;
     font-size: 50px;
-    color: #000;
-    mix-blend-mode: lighten;
-    /* position: relative; */
+    position: relative;
     position: absolute;
-    text-align: center;
-    font-weight: bold;
+    color: #000;
+}
+
+.project {
+    margin: 150px 0 150px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .project img {
@@ -263,25 +240,8 @@ nav ul li p {
     text-decoration: none;
 }
 
-.project1:hover {
+.project1:hover, .project2:hover, .project3:hover {
     border:1px solid black;
-    border-radius: 0;
-    box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
-    /* transform: scale(1.05); */
-    transform: translateY(-20px);
-}
-
-
-.project2:hover {
-    border: 1px solid black;
-    border-radius: 0;
-    box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
-    /* transform: scale(1.05); */
-    transform: translateY(-20px);
-}
-
-.project3:hover {
-    border: 1px solid black;
     border-radius: 0;
     box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
     /* transform: scale(1.05); */
@@ -337,6 +297,10 @@ nav ul li p {
     text-align: center;
 }
 
+.form {
+    overflow: auto;
+}
+
 .form label {
     color: rgb(0, 219, 219);
     font-weight: bolder;
@@ -351,8 +315,6 @@ nav ul li p {
     min-width: 97.3%;
     transition: .4s;
 }
-
-
 
 .form input, .form textarea {
     background-color: #ccc;
