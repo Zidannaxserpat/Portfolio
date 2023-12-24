@@ -326,8 +326,8 @@
         font-size: 17px;
     }
 
-    .project1 img, .project2 img, .project3 img {
-        height: 250px;
+    .project .project1 img, .project .project2 img, .project .project3 img {
+        height: 200px;
     }
 
     .client h1 {
