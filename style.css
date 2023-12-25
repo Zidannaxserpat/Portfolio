@@ -181,6 +181,7 @@ nav ul li p {
 }
 
 .project {
+    text-align: center;
     margin: 150px 0 150px 0;
     /* display: flex; */
     justify-content: center;
@@ -298,65 +299,69 @@ nav ul li p {
 }
 
 .contact {
-    left: 0;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 150px;
-} 
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 30px;
+}
 
-.contact .text, .project .text {
+.contact .text {
     text-align: center;
+}
+
+.form {
+    margin: 0 auto;
 }
 
 .form label {
     color: rgb(0, 219, 219);
     font-weight: bolder;
-    transition: .4s;
+    display: block;
+    margin: 5px 0 -20px 0;
 }
 
-.form input {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: none;
-    /* margin: 0 auto; */
-    min-width: 97.3%;
-    transition: .4s;
-}
-
-.form input, .form textarea {
-    background-color: #ccc;
+.form input[type="email"],
+.form input[type="text"],
+.form textarea {
+    border: 1px solid aqua !important;
+    width: auto;
+    min-width: 100%;
+    padding: 10px 0 10px 5px;
+    margin-bottom: 15px;
     border-radius: 5px;
+    background-color: #ccc;
 }
 
-.form input, .form textarea {
-    border: 1px solid aqua;
+.form input[type="email"]:focus,
+.form input[type="text"]:focus,
+.form textarea:focus {
+    border: 2px solid aqua !important;
+    /* Anda bisa menyesuaikan ketebalan border sesuai kebutuhan */
+}
+
+.form textarea {
+    resize: vertical;
 }
 
 .form input[type="submit"] {
-    margin-top: 20px;
-    width: 1006px;
+    border: 1px solid aqua;
+    width: auto;
+    min-width: 101%;
     cursor: pointer;
-    border-radius: 100px;
     font-size: 15px;
     color: white;
     font-weight: bolder;
     background-color: rgb(0, 219, 219);
+    padding: 10px;
+    border-radius: 100px;
+    margin: auto;
 }
 
 .form input[type="submit"]:hover {
     background-color: rgb(0, 201, 201);
 }
 
-textarea {
-    padding: 15px;
-    background-color: cyan;
-    background-color: #ccc;
-    border: none;
-    height: 100px;
-    max-height: 300px;
-    max-width: 1000px;
-    width: 97.4%;
-    padding-bottom: 100px;
+.form input[type="submit"]:active {
+    background-color: rgb(1, 179, 179);
 }
 
 .open-button {
