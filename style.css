@@ -323,7 +323,8 @@ nav ul li p {
 .form input[type="text"],
 .form textarea {
     border: 1px solid aqua !important;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     min-width: 100%;
     padding: 10px 0 10px 5px;
     margin-bottom: 15px;
@@ -344,7 +345,7 @@ nav ul li p {
 
 .form input[type="submit"] {
     border: 1px solid aqua;
-    width: auto;
+    width: 101%;
     min-width: 101%;
     cursor: pointer;
     font-size: 15px;
