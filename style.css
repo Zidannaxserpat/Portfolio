@@ -139,6 +139,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li .a {
@@ -205,35 +206,46 @@ nav ul li p {
     margin: 150px 0 150px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-around;
 }
 
 .project img {
     border-radius: 10px 10px 0 0;
     transition: .4s;
+    max-width: 335px; /* menambahkan max-width untuk memastikan gambar tidak melebihi lebar */
 }
 
 .project1, .project2, .project3 {
+    display: flex;
     margin: 100px 0 0 0;
+    justify-content: space-between;
     padding: 0 0 10px 0;
     border-radius: 30px;
     background-color: #ccc;
-    transition: .4s ease;
+    max-width: 335px;
 }
 
 .project1 img, .project2 img, .project3 img {
     border-radius: 30px;
-    width: 335px;
-    height: 180px;
+    width: 100%;
+    height: auto;
 }
 
 .project .text h1 {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .project .text p {
     font-size: 14px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    margin: 0;
+    padding: 0;
 }
 
 .project a {
@@ -244,7 +256,6 @@ nav ul li p {
     border:1px solid black;
     border-radius: 0;
     box-shadow: 8px 8px 10px 0px rgb(0, 0, 0);
-    /* transform: scale(1.05); */
     transform: translateY(-20px);
 }
 
@@ -295,10 +306,6 @@ nav ul li p {
 
 .contact .text, .project .text {
     text-align: center;
-}
-
-.form {
-    overflow: auto;
 }
 
 .form label {
