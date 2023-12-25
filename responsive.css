@@ -15,10 +15,6 @@
     .main .jumbotron .mainHeader {
         justify-content: space-between;
     }
-    
-    .main .jumbotron .mainHeader .text {
-        font-size: 17px;
-    }
 
     .main .jumbotron .mainHeader .image img {
         width: 350px;
@@ -168,12 +164,6 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .main .jumbotron .mainHeader {
-        display: inline-block;
-    }
-}
-
 @media only screen and (max-width: 700px) {
     .main .jumbotron .mainHeader .image h3 {
         font-size: 15px;
@@ -198,18 +188,13 @@
     }
 }
 @media only screen and (max-width: 650px) {
-    .main .jumbotron .mainHeader {
-        display: flex;
-        justify-content: space-between;
-    }
-
     .main .jumbotron .mainHeader .text {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .main .jumbotron .mainHeader .image img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
     .main .jumbotron .mainHeader .image h3 {
@@ -225,9 +210,9 @@
     }
 
     .bn632-hover {
-        width: 80px;
-        height: 30px;
-        font-size: 9px;
+        width: 85px;
+        height: 35px;
+        font-size: 11px;
     }
 
     .banner2 {
