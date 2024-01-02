@@ -118,29 +118,58 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Show Loading
+
+document.addEventListener('DOMContentLoaded', function() {
+    showLoading();
+});
+
+window.addEventListener('load', function() {
+    hideLoading();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var images = [
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSeXIFrnCQUJnSEUKgew2Mox335dyb2qr3Utg&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcQfgygT1zjZzhVCAa2l0vD1NK8H03PDy04D-g&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcT4qox2bLAe7OOUEeZ24ntqUckvBKeGF00ouw&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRI13J7BkX-Ikn1DvdLLx9d0r7DWHxx-lOCWg&usqp=CAU',
+        // '/LiaImut/LiaImut.jpg',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcT2XWYlXo-M08FYYHyDgiiIUruno9bOzJN6SA&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRO-ALVQ1amP67jjQbGMhCKER3zdo7dmCTbxw&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRyD3a57mx-yoMaZYvKLU0HqWy1zKfkFZPnbg&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSaqH57r55NRstO_ptxQgrvrUz3OiUxS5R-gA&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRYx4TFnP9v1nHG0tTLJfC4hQ5-jGj3cV2vWA&usqp=CAU',
+        // '/LiaImut/F.jpg',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcR6YTpzhFOfyjdfSm49jqAPp8_MbiLNXIW18g&usqp=CAU',
+        'https://imagedelivery.net/5ejkUOtsMH5sf63fw6q33Q/6f3b03ed-cfe4-427a-6737-b931199fc200/public',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSYCdUsmFyCPFw-clu_5k9tYpZOuaKSCIAIsg&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSPSmr-Pfw-HJ9CMsUCg6OvDMmal8hJ-CBadg&usqp=CAU'
+    ];
+
+    var img = document.querySelector('.img');
+
+    // setInterval(function() {
+    //     var randomIndex = Math.floor(Math.random() * images.length);
+    //     img.src = images[randomIndex];
+    // }, 2000);
+        var randomIndex = Math.floor(Math.random() * images.length);
+        img.src = images[randomIndex];
+    });
+
 function showLoading() {
     document.getElementById("loadingContainer").style.display = "flex";
 }
 
-// Hide Loading
 function hideLoading() {
     document.getElementById("loadingContainer").style.display = "none";
 }
 
-// Simulate a time-consuming action (replace this with your actual code)
 function simulateTimeConsumingAction() {
     showLoading();
     setTimeout(() => {
-        // Simulating a delay of 3 seconds
         hideLoading();
-    }, 2000);
+    }, 3000);
 }
-
-// Contoh penggunaan:
-// Panggil showLoading() sebelum memuat data atau tindakan yang memakan waktu.
-// Panggil hideLoading() setelah data atau tindakan selesai dimuat.
-
 
 window.onscroll = function () {
     scrollFunction();
@@ -149,7 +178,7 @@ window.onscroll = function () {
 function scrollFunction() {
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
     var scrollToTopContainer = document.getElementById("scrollToTopContainer");
-
+    
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopContainer.style.display = "block";
     } else {
@@ -159,7 +188,7 @@ function scrollFunction() {
 
 function scrollToTop() {
     var scrollStep = -window.scrollY / (200 / 10);
-
+    
     function animateScroll() {
         window.scrollBy(0, scrollStep);
 
@@ -170,7 +199,7 @@ function scrollToTop() {
             };
             return;
         }
-
+        
         requestAnimationFrame(animateScroll);
     }
 
@@ -282,8 +311,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Tambahkan class 'dark-mode-scrolled' ke body saat beberapa piksel digulir
-// window.addEventListener('scroll', function () {
-//     const scrolled = window.scrollY > 3180 && window.scrollY < 3350;
-//     document.body.classList.toggle('dark-mode-scrolled', scrolled);
-// });
+function refresh() {
+    location.reload();
+}
+
+document.addEventListener('keydown', function(event) {
+    if(event.altKey && event.code === 'KeyS') {
+        scrollToTop();
+    }
+});
