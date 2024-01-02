@@ -109,12 +109,16 @@ function toggleTheme() {
 // }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var slider = document.querySelector('.sliderImg');
-    var img = document.querySelector('.img');
+    var slider = document.querySelector('.slideRadioImg');
+    var img = document.querySelector('.image img');
+    var checkbox = document.getElementById('toogleBorder')
 
     slider.addEventListener('click', function() {
-        this.classList.toggle('clicked');
-        img.style.borderRadius = this.classList.contains('clicked') ? '10px' : '50%';
+        if (checkbox.checked) {
+            img.style.borderRadius = "50%";
+        } else {
+            img.style.borderRadius = "10px";
+        }
     });
 });
 
@@ -142,7 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcR6YTpzhFOfyjdfSm49jqAPp8_MbiLNXIW18g&usqp=CAU',
         'https://imagedelivery.net/5ejkUOtsMH5sf63fw6q33Q/6f3b03ed-cfe4-427a-6737-b931199fc200/public',
         'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSYCdUsmFyCPFw-clu_5k9tYpZOuaKSCIAIsg&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSPSmr-Pfw-HJ9CMsUCg6OvDMmal8hJ-CBadg&usqp=CAU'
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcSPSmr-Pfw-HJ9CMsUCg6OvDMmal8hJ-CBadg&usqp=CAU',
+        'https://i.pinimg.com/736x/c9/1b/12/c91b12ac7937f2a4292f22f98ea7887b.jpg',
+        'https://qph.cf2.quoracdn.net/main-qimg-60a773ccc75f7d432f771e515bd67dc9-lq',
+        'https://i.pinimg.com/originals/d0/d1/5c/d0d15ceac80e4a91a9024827972e6607.jpg',
+        'https://animegirlpng.com/wp-content/uploads/2023/03/1680193617412-942x1024.png',
+        'https://i.pinimg.com/736x/b1/1a/41/b11a413767e87d19a96bf7126c4ba6ce.jpg'
     ];
 
     var img = document.querySelector('.img');
@@ -151,9 +160,15 @@ document.addEventListener('DOMContentLoaded', function() {
     //     var randomIndex = Math.floor(Math.random() * images.length);
     //     img.src = images[randomIndex];
     // }, 2000);
-        var randomIndex = Math.floor(Math.random() * images.length);
-        img.src = images[randomIndex];
+    var randomIndex = Math.floor(Math.random() * images.length);
+    img.src = images[randomIndex];
+    
+    img.addEventListener('click', function() {
+        var currentIndex = images.indexOf(img.src);
+        var imageUrl = images[currentIndex];
+        window.open(imageUrl, '_blank');
     });
+});
 
 function showLoading() {
     document.getElementById("loadingContainer").style.display = "flex";
