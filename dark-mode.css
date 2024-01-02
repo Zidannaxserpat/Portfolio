@@ -1,4 +1,4 @@
-.darkmode * {
+.dark-mode * {
     -moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
@@ -11,13 +11,17 @@
     color: #fff;
 }
 
+.dark-mode header {
+    box-shadow: 0 0 10px 2px white;
+}
+
 .dark-mode nav ul li .a {
     color: #ffffff;
     transition: color .4s;
 }
 
 .dark-mode nav ul li .a:hover {
-    color: rgb(11, 204, 204);
+    color: rgb(0, 255, 0);
 }
 
 .dark-mode .toogleBtn .theme-toogle {
@@ -32,8 +36,8 @@
     color: rgb(255, 255, 255);
 }
 
-.dark-mode .ZDev {
-    color: rgb(0, 100, 0);
+.dark-mode .ZDev h3 {
+    color: white;
 }
 
 .dark-mode .slideRadio .PLight {
@@ -86,12 +90,12 @@
     color: rgb(0, 255, 179);
 }
 
-.dark-mode .media img {
+.dark-mode .media {
     filter: brightness(5);
 }
 
-.dark-mode .banner2 .connect .teks .media img:hover {
-    background-color: rgb(2, 150, 105);
+.dark-mode .banner2 .connect .media img:hover {
+    background-color: rgb(0, 34, 23);
 }
 
 .dark-mode .project {
@@ -116,8 +120,7 @@
     object-fit: cover;
 }
 
-.dark-mode .title {
-    padding-top: 10px;
+.dark-mode .project .title {
     background-color: rgb(13, 23, 28);
     font-size: 50px;
     color: #fff;
@@ -140,7 +143,7 @@
 
 .dark-mode .project1:hover, .dark-mode .project2:hover, .dark-mode .project3:hover {
     background-color: rgb(0, 94, 66);
-    box-shadow: 8px 8px 10px 0px cyan;
+    box-shadow: 8px 8px 10px 0px white;
 }
 
 .dark-mode .client {
@@ -168,6 +171,10 @@
     background-color: rgb(0, 190, 127);
 }
 
+.dark-mode .form input[type="submit"]:active {
+    background-color: rgb(0, 175, 117);
+}
+
 body.dark-mode-scrolled nav ul li .a {
     color: black;
 }
@@ -180,8 +187,9 @@ body.dark-mode-scrolled nav ul li .a {
     color: white;
 }
 
-.dark-mode span.ZDev {
+.dark-mode .ZeeCoder h3 {
     color: rgb(0, 255, 98);
+    /* color: white; */
 }
 
 .dark-mode .slider-img {
