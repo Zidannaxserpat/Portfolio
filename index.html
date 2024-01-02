@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="slider-img.css">
+    <link rel="stylesheet" href="sidenavslider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.1/signalr.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -70,26 +71,29 @@
 </div>
 <nav class="sidenav">
     <div class="close-button" onclick="closeNav()">&times;</div>
-    <ul>
-        <li><a class="a" href="#Porch">Porch</a></li>
-        <li><a class="a" id="about" href="#About">About Me</a></li>
-        <li><a class="a" href="#Portfolio">Portfolio</a></li>
-        <li><a class="a" href="#Support">Support</a></li>
+    <div class="container">
+        <div class="ZeeCoder">
+            <h3 onclick="refresh();">ZeeCoder.</h3>
+        </div>
+        <ul>
+            <li><a class="a" href="#Porch">Porch</a></li>
+            <li><a class="a" id="about" href="#About">About Me</a></li>
+            <li><a class="a" href="#Portfolio">Portfolio</a></li>
+            <li><a class="a" href="#Support">Support</a></li>
         <li><a class="a" href="#Contact">Contact</a></li>
-    </ul>
-    <div class="slideRadio">
-        <label class="switch" title="Toogle themes">
-            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
-            <span class="slider"></span>
-        </label>
+        </ul>
+        <div class="sidenavSlideRadio">
+            <label class="switch" title="Toogle themes">
+                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+        </div>
     </div>
-    
-    <script src="script.js"></script>
 </nav>
 
 <header>
-    <div class="ZDev">
-        <a href="#Porch"><img src="ZDev.png" alt="" srcset=""></a>
+    <div class="ZeeCoder">
+        <h3 onclick="refresh();">ZeeCoder.</h3>
     </div>
     <nav>
         <ul>
@@ -120,6 +124,7 @@
             <div class="mainHeader">
                 <div class="text">
                     <h1>Anya Forger</h1>
+                    <!-- <h2>PUNYA ZII 🥰🥰🥰 Liaa liat apa? Anya punya ZII WLEE</h2> -->
                     <h3>
                        From SxF anime 
                     </h3>
@@ -127,7 +132,7 @@
                     <a href="https://wa.me/+6285156346349"><button class="bn632-hover bn26">Hubungi</button></a>
                 </div>
                 <div class="image" id="anya">
-                    <img class="img" title="Anya Forger" src="Anya.jpeg" alt="" srcset="">
+                    <img class="img" title="Anya Forger" scr="https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRalIHYgKO4ikf8yEts9WqNpUPnU0KWzjFZVg&usqp=CAU" alt="" srcset="">
                     <div class="elements">
                         <h3>Ubah Border:</h3>
                         <div class="slideRadio-img">
@@ -177,7 +182,7 @@
                 <a href="https://zidannaxserpat.github.io/MicrosoftClone/"><img src="MSProject.png" alt="">
                     <div class="text">
                         <h1>Microsoft Web Clone</h1>
-                        <p>Cloning official microsoft web without JS<br> and 80% success clone.</p>
+                        <p>Cloning official microsoft web without JS and 80% success clone.</p>
                     </div>
                 </a>
             </div>
@@ -193,7 +198,7 @@
                 <a href="https://zidannaxserpat.github.io/MohammadZidaneRahadian.github.io/"><img src="AppleWeb.png" alt="">
                     <div class="text">
                         <h1>Apple Web Clone</h1>
-                        <p>Cloning Official apple web without JS<br>(almost 100% success).</p>
+                        <p>Cloning Official apple web without JS(almost 100% success).</p>
                     </div>
                 </a>
             </div>
@@ -217,7 +222,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, illum.</p>
         </div>
         <div class="form">
-            <form action="/submit" method="get">
+            <form action="/submit" method="post">
                 <label for="Name">Nama</label><br>
                 <input type="text" name="Name" id="Name" required><br> <!-- Tambahkan name="Name" -->
                 <label for="Email">Email</label><br>
@@ -256,7 +261,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 <span class="ZDev">ZDev.</span> All Rights Reserved.</p>
+            <p>&copy; 2023 <span class="ZeeCoder">ZeeCoder.</span> All Rights Reserved.</p>
         </div>
     </footer>
 </body>
