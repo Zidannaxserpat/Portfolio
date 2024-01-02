@@ -109,15 +109,14 @@ function toggleTheme() {
 // }
 
 document.addEventListener('DOMContentLoaded', function() {
-    var slider = document.querySelector('.slider-img');
+    var slider = document.querySelector('.sliderImg');
     var img = document.querySelector('.img');
 
     slider.addEventListener('click', function() {
         this.classList.toggle('clicked');
-        img.style.borderRadius = this.classList.contains('clicked') ? '50%' : '10px';
+        img.style.borderRadius = this.classList.contains('clicked') ? '10px' : '50%';
     });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     showLoading();
