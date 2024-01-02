@@ -206,7 +206,7 @@
         text-align: center;
     }
     
-    .main .jumbotron .mainHeader .image .elements .slideRadio-img {
+    .main .jumbotron .mainHeader .image .elements .slideRadioImg {
         margin-left: 39%;
     }
 
@@ -236,6 +236,8 @@
     .banner2 .connect .teks p {
         font-size: 12px;
     }
+
+    .sli
 
     .project .project1 img, .project .project2 img, .project .project3 img {
         height: 200px;
