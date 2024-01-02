@@ -15,11 +15,6 @@ body {
     margin: 0 10px;
     padding: 0;
 }
-
-#contact {
-    margin-right: 200px;
-}
-
 #Contact {
     margin-bottom: 100px;
 }
@@ -32,18 +27,19 @@ header {
     backdrop-filter: blur(5px);
     background-color: #33333300;
     color: #fff;
-    padding: 1em;
+    box-shadow: 0 0 8px 2px rgb(13, 23, 28);
+    padding: 10px 10px 0 10px;
 }
 
-.slideRadio .PLight {
+header .slideRadio .PLight {
     display: none;
 }
 
-.slideRadio .PDark {
+header .slideRadio .PDark {
     display: block;
 }
 
-.slideRadio .PLight span, .slideRadio .PDark span {
+header .slideRadio .PLight span, .slideRadio .PDark span {
     cursor: pointer;
 }
 
@@ -116,8 +112,7 @@ header {
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-.theme-toogle {
-    float: right;
+header .theme-toogle {
     margin: -50px 20px 0 0;
     border-radius: 50%;
     width: 20px;
@@ -125,15 +120,15 @@ header {
     background-color: black;
 }
 
-div.ZDev a img {
+header div.ZeeCoder  h3 {
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(0, 255, 98);
     float: left;
-    margin-top: -5px;
-    width: 60px;
-    height: 60px;
 }
 
-nav ul {
-    margin-top: 20px;
+header nav ul {
     /* position: relative; */
     /* position: absolute; */
     justify-content: center;
@@ -142,7 +137,7 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li .a {
+header nav ul li a {
     padding: 5px;
     margin: 0 70px 0 5px;
     color: rgb(0, 0, 0);
@@ -150,14 +145,8 @@ nav ul li .a {
     transition: color .4s;
 }
 
-nav ul li .a:hover {
+header nav ul li .a:hover {
     color: rgb(11, 204, 204);
-}
-
-nav ul li p {
-    margin: 2px 30px 30px 30px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
 }
 
 .banner2 {
@@ -182,14 +171,13 @@ nav ul li p {
 
 .project {
     text-align: center;
-    margin: 150px 0 150px 0;
     /* display: flex; */
     justify-content: center;
     /* transition: .4s; */
 }
 
-.title {
-    margin-top: -100px;
+.project .title {
+    margin-top: -60px;
     background-color: #fff;
     font-size: 50px;
     position: relative;
@@ -207,7 +195,7 @@ nav ul li p {
 .project img {
     border-radius: 10px 10px 0 0;
     transition: .4s;
-    max-width: 335px; /* menambahkan max-width untuk memastikan gambar tidak melebihi lebar */
+    max-width: 335px;
 }
 
 .project1, .project2, .project3 {
@@ -342,7 +330,7 @@ nav ul li p {
 }
 
 .form input[type="submit"] {
-    border: 1px solid aqua;
+    border: 2px solid rgb(0, 219, 219);
     width: 101%;
     min-width: 101%;
     cursor: pointer;
