@@ -192,11 +192,11 @@ body.dark-mode-scrolled nav ul li .a {
     /* color: white; */
 }
 
-.dark-mode .slider-img {
+.dark-mode .sliderImg {
     border: 2px solid white;
     background-color: #00000000;
 }
 
-.dark-mode .slider-img::before {
+.dark-mode .sliderImg::before {
     background-color: #fff;
 }
