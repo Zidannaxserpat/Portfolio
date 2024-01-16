@@ -168,7 +168,24 @@ document.addEventListener('DOMContentLoaded', function() {
         var imageUrl = images[currentIndex];
         window.open(imageUrl, '_blank');
     });
+
+    document.addEventListener('contextmenu', function(e) {
+        if(e.target.classList.contains('img')) {
+            e.preventDefault();
+        }
+    }, false);
+
+    document.addEventListener('contextmenu', function () {
+        imageUrl[currentIndex].preventDefault();
+    });
+
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var link = document.getElementById('downloadLink');
+//     link.click();  // Memicu klik pada link untuk memulai unduhan
+// });
+
 
 function showLoading() {
     document.getElementById("loadingContainer").style.display = "flex";
@@ -233,7 +250,7 @@ function scrollToTop() {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#About"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+        e.preventDefault();
 
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
@@ -252,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#Porch"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+        e.preventDefault();
 
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
@@ -328,6 +345,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function refresh() {
     location.reload();
 }
+
+document.addEventListener('keydown', function(event) {
+    return event.shiftKey && event.code === 'KeyR' ? refresh() : null;
+})
 
 document.addEventListener('keydown', function(event) {
     if(event.altKey && event.code === 'KeyS') {
