@@ -128,18 +128,26 @@ header div.ZeeCoder  h3 {
     float: left;
 }
 
-header nav ul {
-    /* position: relative; */
+header nav {
+    position: relative;
     /* position: absolute; */
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
 
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+header nav ul li {
+    list-style: none;
+}
+
 header nav ul li a {
     padding: 5px;
-    margin: 0 70px 0 5px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color .4s;
