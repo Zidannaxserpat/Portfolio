@@ -4,8 +4,7 @@
 
 .slideRadio {
     display: flex;
-    float: right;
-    margin: 0 10px 0 100px;
+    margin-top: 15px;
 }
 
 header .slideRadio .PLight {
