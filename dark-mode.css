@@ -57,6 +57,16 @@
     display: none;
 }
 
+.dark-mode .sidenavSlideRadio .slider {
+    box-shadow: 0 0 10px 3px white;
+    background-color: black;
+    border: 2px solid transparent;
+}
+
+.dark-mode .sidenavSlideRadio .slider::before {
+    background-color: #fff;
+}
+
 .dark-mode .main .jumbotron .mainHeader .text {
     color: white;
 }
