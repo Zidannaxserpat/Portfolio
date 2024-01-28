@@ -195,16 +195,20 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .main .jumbotron .mainHeader {
+        margin: 150px auto;
+    }
+    
     .main .jumbotron .mainHeader .text {
         font-size: 10px;
         padding: 10px;
     }
-
+    
     .main .jumbotron .mainHeader .image img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
-
+    
     .main .jumbotron .mainHeader .image h3 {
         font-size: 10px;
     }
@@ -216,7 +220,7 @@
     .main .jumbotron .mainHeader .image .elements .slideRadioImg {
         margin-left: 39%;
     }
-
+    
     .bn632-hover {
         width: 85px;
         height: 35px;
