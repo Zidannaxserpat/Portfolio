@@ -65,6 +65,39 @@ header .slideRadio .PLight span, .slideRadio .PDark span {
     border-radius: 10px;
 }
 
+.main .jumbotron .mainHeader .text {
+    animation: slideText 1s forwards;
+    animation-duration: 1s;
+}
+
+.main .jumbotron .mainHeader .text:nth-child(1) {
+    animation: slideText 1s;
+}
+
+.main .jumbotron .mainHeader .text:nth-child(2) {
+    animation: slideText 1s;
+}
+
+.main .jumbotron .mainHeader .text:nth-child(3) {
+    animation: slideText 1;
+}
+
+.main .jumbotron .mainHeader .text:nth-child(4) {
+    animation: slideText 1s;
+}
+
+
+@keyframes slideText {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .main .jumbotron .mainHeader .image h3 {
     font-size: 25px;
     color: black;
@@ -129,8 +162,6 @@ header div.ZeeCoder  h3 {
 }
 
 header nav {
-    position: relative;
-    /* position: absolute; */
     justify-content: space-evenly;
     list-style: none;
     display: flex;
@@ -164,7 +195,12 @@ header nav ul li .a:hover {
     justify-content: space-evenly;
 }
 
+.banner2 .about {
+    transition: 1s;
+}
+
 .banner2 .connect {
+    transition: 1s;
     margin-top: 48px;
 }
 
@@ -181,7 +217,7 @@ header nav ul li .a:hover {
     text-align: center;
     /* display: flex; */
     justify-content: center;
-    /* transition: .4s; */
+    transition: .7s;
 }
 
 .project .title {
@@ -261,7 +297,7 @@ header nav ul li .a:hover {
 .client {
     padding: 70px 0 100px 0;
     background: linear-gradient(90deg, #ccc, #fff, #fff, #ccc);
-    transition: .4s;
+    transition: 1s;
 }
 
 .client h1 {
