@@ -1,5 +1,5 @@
 // Function to create a project element
-// function createProjectElement(title, description) {
+// function createProjectElement(title, project) {
 //     const projectElement = document.createElement('div');
 //     projectElement.classList.add('project');
 
@@ -11,7 +11,7 @@
 //     titleElement.textContent = title;
 
 //     const descriptionElement = document.createElement('p');
-//     descriptionElement.textContent = description;
+//     descriptionElement.textContent = project;
 
 //     projectElement.appendChild(titleElement);
 //     projectElement.appendChild(descriptionElement);
@@ -20,14 +20,14 @@
 // }
 
 // Function to add a project to the project list
-// function addProject(title, description) {
+// function addProject(title, project) {
 //     const projectList = document.getElementById('project-list');
-//     const projectElement = createProjectElement(title, description);
+//     const projectElement = createProjectElement(title, project);
 //     projectList.appendChild(projectElement);
 // }
 
 // Example: Add a project dynamically
-// addProject('Sample Project', 'This is a sample project description.');
+// addProject('Sample Project', 'This is a sample project project.');
 
 function openNav() {
     document.querySelector(".sidenav").style.width = "250px";
@@ -151,7 +151,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'https://qph.cf2.quoracdn.net/main-qimg-60a773ccc75f7d432f771e515bd67dc9-lq',
         'https://i.pinimg.com/originals/d0/d1/5c/d0d15ceac80e4a91a9024827972e6607.jpg',
         'https://animegirlpng.com/wp-content/uploads/2023/03/1680193617412-942x1024.png',
-        'https://i.pinimg.com/736x/b1/1a/41/b11a413767e87d19a96bf7126c4ba6ce.jpg'
+        'https://i.pinimg.com/736x/b1/1a/41/b11a413767e87d19a96bf7126c4ba6ce.jpg',
+        'https://encrypted-tbn0.gstatic.com/images.jpg?q=tbn:ANd9GcRalIHYgKO4ikf8yEts9WqNpUPnU0KWzjFZVg&usqp=CAU'
     ];
 
     var img = document.querySelector('.img');
@@ -171,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.addEventListener('contextmenu', function(e) {
         if(e.target.classList.contains('img')) {
-            e.preventDefault();
+            e.preventDefault()
         }
     }, false);
 
@@ -315,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetSection) {
                 targetSection.scrollIntoView({
                     behavior: 'smooth',
-                    block: 'center',
+                    block: 'start',
                     inline: 'start'
                 });
             }
@@ -347,11 +348,68 @@ function refresh() {
 }
 
 document.addEventListener('keydown', function(event) {
-    return event.shiftKey && event.code === 'KeyR' ? refresh() : null;
+    return event.altKey && event.code === 'KeyR' ? refresh() : null;
 })
 
 document.addEventListener('keydown', function(event) {
     if(event.altKey && event.code === 'KeyS') {
         scrollToTop();
+    }
+});
+
+document.addEventListener("scroll", function() {
+    var project = document.querySelector('.project');
+    var position = project.getBoundingClientRect();
+
+    if (position.top <= window.innerHeight * 0.95) {
+        project.style.opacity = "1";
+        project.style.transform = "scale(1)";
+        project.style.backgroundColor = "transparent";
+        project.style.borderRadius = "10px";
+        project.style.filter = "none"
+    } else if(!position.top <= !window.innerHeight * 0.95) {
+        project.style.opacity = "0";
+        project.style.transform = "scale(0.5)";
+        project.style.borderRadius = "500px";
+        project.style.filter = "blur(10px)"
+    }
+});
+
+document.addEventListener("scroll", function() {
+    var client = document.querySelector('.client');
+    var position = client.getBoundingClientRect();
+
+    if (position.top <= window.innerHeight * 0.65) {
+        client.style.opacity = "1";
+    } else if(!position.top <= !window.innerHeight * 0.65) {
+        client.style.opacity = "0";
+    }
+});
+
+document.addEventListener("scroll", function() {
+    var about = document.querySelector('.about');
+    var position = about.getBoundingClientRect();
+
+    if(position.top <= window.innerHeight * 0.65) {
+        about.style.transform = "translateX(0)";
+        about.style.opacity = "1";
+    } else if(!position.top <= window.innerHeight * 0.65) {
+        about.style.transform = "translateX(-300px)";
+        about.style.opacity = "0";
+    }
+});
+
+document.addEventListener("scroll", function() {
+    var connect = document.querySelector('.connect');
+    var position =  connect.getBoundingClientRect();
+
+    if(position.top <= window.innerHeight * 0.75) {
+        connect.style.transform = "translateX(0)";
+        connect.style.opacity = "1";
+        connect.style.position = "relative"
+    } else if(!position.top <= window.innerHeight * 0.75) {
+        connect.style.transform = "translateX(300px)";
+        connect.style.opacity = "0";
+        connect.style.position = "absolute"
     }
 });
