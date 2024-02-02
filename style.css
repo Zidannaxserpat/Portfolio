@@ -45,11 +45,11 @@ header .slideRadio .PLight span, .slideRadio .PDark span {
 
 .main .jumbotron .mainHeader {
     z-index: -1;
-    margin: 90px 60px 0 60px;
+    margin-top: 90px;
     color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
 }
 
 .main .jumbotron .mainHeader .text {
@@ -69,23 +69,6 @@ header .slideRadio .PLight span, .slideRadio .PDark span {
     animation: slideText 1s forwards;
     animation-duration: 1s;
 }
-
-.main .jumbotron .mainHeader .text:nth-child(1) {
-    animation: slideText 1s;
-}
-
-.main .jumbotron .mainHeader .text:nth-child(2) {
-    animation: slideText 1s;
-}
-
-.main .jumbotron .mainHeader .text:nth-child(3) {
-    animation: slideText 1;
-}
-
-.main .jumbotron .mainHeader .text:nth-child(4) {
-    animation: slideText 1s;
-}
-
 
 @keyframes slideText {
     from {
@@ -200,7 +183,7 @@ header nav ul li .a:hover {
 }
 
 .banner2 .connect {
-    transition: 1s;
+    transition: 1.5s;
     margin-top: 48px;
 }
 
