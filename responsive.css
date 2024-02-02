@@ -7,10 +7,6 @@
         opacity: 0;
     }
 
-    .main .jumbotron .mainHeader {
-        justify-content: space-between;
-    }
-
     .main .jumbotron .mainHeader .image img {
         width: 350px;
         height: 350px;
@@ -48,8 +44,8 @@
     }
 
     .main .jumbotron .mainHeader .image img {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .main .jumbotron .mainHeader .image h3 {
@@ -91,15 +87,25 @@
     }
 }
 
-@media only screen and (max-width:860px) {
+@media only screen and (max-width:890px) {
     header {
         display: none;
+    }
+
+    .main .jumbotron .mainHeader .image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .main .jumbotron .mainHeader .text, .main .jumbotron .mainHeader .image {
+        margin: 0 auto;
     }
 
     .sidenav {
         display: flex;
         margin: 0;
-        backdrop-filter: blur(200px);
+        background-color: rgba(255, 255, 255, 0.705);
+        backdrop-filter: blur(5px);
         z-index: 10;
         height: 50%;
         width: 0;
@@ -194,19 +200,22 @@
     }
 }
 
-@media only screen and (max-width: 650px) {
-    .main .jumbotron .mainHeader {
-        margin: 150px auto;
-    }
-    
+@media only screen and (max-width: 600px) {
     .main .jumbotron .mainHeader .text {
-        font-size: 10px;
-        padding: 10px;
+        text-align: center;
     }
+}
+
+
+@media only screen and (max-width: 650px) {
+    /* .main .jumbotron .mainHeader .text {
+        font-size: 16px;
+        padding: 10px;
+    } */
     
     .main .jumbotron .mainHeader .image img {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     
     .main .jumbotron .mainHeader .image h3 {
