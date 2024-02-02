@@ -366,12 +366,12 @@ document.addEventListener("scroll", function() {
         project.style.transform = "scale(1)";
         project.style.backgroundColor = "transparent";
         project.style.borderRadius = "10px";
-        project.style.filter = "none"
+        // project.style.filter = "none"
     } else if(!position.top <= !window.innerHeight * 0.95) {
         project.style.opacity = "0";
         project.style.transform = "scale(0.5)";
         project.style.borderRadius = "500px";
-        project.style.filter = "blur(10px)"
+        // project.style.filter = "blur(10px)"
     }
 });
 
@@ -406,10 +406,8 @@ document.addEventListener("scroll", function() {
     if(position.top <= window.innerHeight * 0.75) {
         connect.style.transform = "translateX(0)";
         connect.style.opacity = "1";
-        connect.style.position = "relative"
     } else if(!position.top <= window.innerHeight * 0.75) {
-        connect.style.transform = "translateX(300px)";
+        connect.style.transform = "translateX(-300px)";
         connect.style.opacity = "0";
-        connect.style.position = "absolute"
     }
 });
