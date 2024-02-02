@@ -57,6 +57,10 @@
     display: none;
 }
 
+.dark-mode .sidenav {
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
 .dark-mode .sidenavSlideRadio .slider {
     box-shadow: 0 0 10px 3px white;
     background-color: black;
