@@ -66,7 +66,7 @@ header .slideRadio .PLight span, .slideRadio .PDark span {
 }
 
 .main .jumbotron .mainHeader .text {
-    animation: slideText 1s forwards;
+    animation: slideText 1s;
     animation-duration: 1s;
 }
 
