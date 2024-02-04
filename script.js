@@ -122,12 +122,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function slideTextOff() {
+    img = document.querySelector('.text.anya');
+    
+    img.style.display = "none";
+}
+
+function slideTextOnn() {
+    img = document.querySelector('.text.anya');
+
+    img.style.display = "block";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     showLoading();
+    slideTextOff();
 });
 
 window.addEventListener('load', function() {
     hideLoading();
+    slideTextOnn();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
